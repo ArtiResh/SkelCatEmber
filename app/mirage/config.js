@@ -6,6 +6,40 @@ export default function() {
             let rec = {type: 'models', id: attrs.id, attributes: attrs};
         return rec;
         });
+        let temp =[
+            {
+                type: 'types',
+                id: 1,
+                attributes:{id: 1,name: "Apple"}
+            },
+            {
+                type: 'types',
+                id: 2,
+                attributes:{id: 2,name: "Samsung"}
+            },
+            {
+                type: 'types',
+                id: 3,
+                attributes:{id: 3,name: "Lg"}
+            },
+            {
+                type: 'types',
+                id: 4,
+                attributes:{id: 4,name: "Huawei"}
+            },
+            {
+                type: 'types',
+                id: 5,
+                attributes:{id: 5,name: "Lenovo"}
+            },
+            {
+                type: 'types',
+                id: 6,
+                attributes:{id: 6,name: "Moto"}
+            },
+        ];
+
+        data = data.concat(temp);
 
         return { data };
     });

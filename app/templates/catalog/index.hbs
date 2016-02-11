@@ -1,5 +1,6 @@
 <ul class='cars'>
   {{#each model as |item|}}
+    {{list-types}}
     <li class='item'>
       {{item.name}} - {{item.type}} - {{item.producer}} - {{item.price}}
     </li>
