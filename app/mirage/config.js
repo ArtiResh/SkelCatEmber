@@ -1,5 +1,14 @@
 export default function() {
+    this.namespace = '';
+    this.get('/models', (db) => {
+        let data = {};
+        data = db.models.map((attrs) => {
+            let rec = {type: 'models', id: attrs.id, attributes: attrs};
+        return rec;
+        });
 
+        return { data };
+    });
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
